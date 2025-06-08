@@ -4,7 +4,7 @@ import os
 import json
 import pandas as pd
 
-PERSIST_DIR = "/persistent"
+PERSIST_DIR = "./persistent"
 IMPORTANCE_DIR = os.path.join(PERSIST_DIR, "importances")
 os.makedirs(IMPORTANCE_DIR, exist_ok=True)
 
