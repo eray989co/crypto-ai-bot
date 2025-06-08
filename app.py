@@ -10,7 +10,7 @@ from visualization import generate_visual_report, generate_visuals_for_strategy
 from wrong_data_loader import load_training_prediction_data
 from logger import evaluate_predictions
 
-PERSIST_DIR = "/persistent"
+PERSIST_DIR = "./persistent"
 LOG_DIR, MODEL_DIR = os.path.join(PERSIST_DIR, "logs"), os.path.join(PERSIST_DIR, "models")
 LOG_FILE, PREDICTION_LOG = os.path.join(LOG_DIR, "train_log.csv"), os.path.join(PERSIST_DIR, "prediction_log.csv")
 WRONG_PREDICTIONS, AUDIT_LOG = os.path.join(PERSIST_DIR, "wrong_predictions.csv"), os.path.join(LOG_DIR, "evaluation_audit.csv")
