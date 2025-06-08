@@ -3,7 +3,7 @@ from data.utils import SYMBOLS
 from train import train_model
 import time
 
-PERSIST_DIR = "/persistent"
+PERSIST_DIR = "./persistent"
 MODEL_DIR = os.path.join(PERSIST_DIR, "models")
 REQUIRED_MODELS = ["lstm", "cnn_lstm", "transformer"]
 
