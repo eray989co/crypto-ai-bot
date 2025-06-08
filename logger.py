@@ -1,7 +1,7 @@
 import os, csv, datetime, pandas as pd, pytz, hashlib
 from data.utils import get_kline_by_strategy
 
-DIR, LOG = "/persistent", "/persistent/logs"
+DIR, LOG = "./persistent", "/persistent/logs"
 PREDICTION_LOG = f"{DIR}/prediction_log.csv"
 WRONG = f"{DIR}/wrong_predictions.csv"
 EVAL_RESULT = f"{DIR}/evaluation_result.csv"
