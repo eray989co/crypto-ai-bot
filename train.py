@@ -14,7 +14,7 @@ from collections import Counter
 import sqlite3
 
 DEVICE = torch.device("cpu")
-MODEL_DIR = "/persistent/models"
+MODEL_DIR = "./persistent/models"
 os.makedirs(MODEL_DIR, exist_ok=True)
 now_kst = lambda: datetime.datetime.now(pytz.timezone("Asia/Seoul"))
 NUM_CLASSES = 16
