@@ -4,7 +4,7 @@ import sqlite3
 import os
 
 # ✅ DB 파일 경로
-DB_PATH = "/persistent/logs/failure_patterns.db"
+DB_PATH = "./persistent/logs/failure_patterns.db"
 
 # ✅ 1. DB 초기화 함수 (최초 실행 시 테이블 생성)
 def ensure_failure_db():
