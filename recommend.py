@@ -7,10 +7,10 @@ from src.message_formatter import format_message
 import train
 
 STRATEGY_VOL = {"단기": 0.003, "중기": 0.005, "장기": 0.008}
-AUDIT_LOG = "/persistent/logs/prediction_audit.csv"
-FAILURE_LOG = "/persistent/logs/failure_count.csv"
-MESSAGE_LOG = "/persistent/logs/message_log.csv"
-os.makedirs("/persistent/logs", exist_ok=True)
+AUDIT_LOG = "./persistent/logs/prediction_audit.csv"
+FAILURE_LOG = "./persistent/logs/failure_count.csv"
+MESSAGE_LOG = "./persistent/logs/message_log.csv"
+os.makedirs("./persistent/logs", exist_ok=True)
 now_kst = lambda: datetime.datetime.now(pytz.timezone("Asia/Seoul"))
 
 def log_audit(symbol, strategy, result, status):
